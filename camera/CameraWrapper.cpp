@@ -53,8 +53,6 @@ static struct hw_module_methods_t camera_module_methods = {
     .open = camera_device_open
 };
 
-#define ID_CAMERA_MAIN  0
-#define ID_CAMERA_FRONT 1
 
 camera_module_t HAL_MODULE_INFO_SYM = {
     .common = {
