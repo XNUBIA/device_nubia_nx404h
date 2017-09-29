@@ -34,4 +34,11 @@ TARGET_VENDOR_PRODUCT_NAME := NX404H
 TARGET_VENDOR_DEVICE_NAME := NX404H
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=NX404H PRODUCT_NAME=NX404H
 
+PRODUCT_PROPERTY_OVERRIDES += \
+        ro.ota.romname=RR-NX404H \
+        ro.ota.manifest=https://raw.githubusercontent.com/XNUBIA/RR-ota/master/RR_NX404H.ota.xml \
+        ro.ota.version=$(shell date +%Y%m%d)
+PRODUCT_PACKAGES += OTAUpdates
+
+WITH_SU := true
 
